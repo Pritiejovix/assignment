@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FASHIONISTA - Your Fashion Superstore. Explore the latest ladies' clothing and trends.">
+    <title>FASHIONISTA - Your Fashion Superstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-x7c5WBs65ePLMVN2CfQx8hcm7BCRvMOE5kgfcvhSKVbIgV5DcXdZ7HIaobgYVAYH" crossorigin="anonymous">
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db; /* Blue header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .topnav {
+            text-align: center;
+            background-color: #2c3e50; /* Dark blue navigation */
+            overflow: hidden;
+            padding: 10px 0;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #34495e; /* Darker blue on hover */
+        }
+
+        .categories {
+            display: inline-block;
+        }
+
+        .search-container {
+            float: right;
+            margin-top: 10px;
+        }
+
+        input[type=text] {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type=text]:focus {
+            outline: none;
+            border-color: #3498db; /* Blue border on focus */
+        }
+
+        .active-hours {
+            float: right;
+            padding: 14px 16px;
+            color: white;
+        }
+
+        section {
+            background-color: #ecf0f1; /* Light gray sections */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .fashion-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .fashion-icon {
+            display: inline-block;
+            margin: 0 15px;
+            background-color: #3498db; /* Blue background for icons */
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .fashion-icon i {
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 30%;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            flex: 1;
+        }
+
+        .download-btn {
+            background-color: #3498db; /* Blue download button */
+            color: white;
+            padding: 8px 16px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-btn:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        .footer {
+            background-color: #2c3e50; /* Dark blue footer */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>JOVIA FASHIONZ</h1>
+    </header>
+
+    <nav class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Clothing</a>
+        <a href="#">Trends</a>
+        <a href="#">About Us</a>
+        <div class="categories">
+            <a href="#">Categories &#9662;</a>
+            <div class="dropdown-content">
+                <a href="#">Dresses</a>
+                <a href="#">Tops</a>
+                <a href="#">Bottoms</a>
+                <a href="#">Accessories</a>
+                <!-- Add more categories as needed -->
+            </div>
+        </div>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search fashion..." name="search">
+            </form>
+        </div>
+        <div class="active-hours">
+           
+            <div id="active hours">
+                <div class="content">
+                    
+                <h1>JOVIA FASHIONZ HOURS</h1>
+                <p>Monday - Friday</p>
+                <h3>8:00 AM – 10:00 PM</h3>
+                <p>Sarturday</p>
+                <h3>9:00 AM - 5:00 PM</h3>
+                <p>Sunday</p>
+                <h3>11:00 AM - 2:00 PM</h3>
+                
+            </div>
+            
+        </div>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2 style="color: #3498db;">Featured Styles</h2>
+            <!-- Slideshow with different fashion photos -->
+            <div class="slideshow-container">
+                <img class="mySlides" src="clot1.jpg" alt="Dress">
+                <img class="mySlides" src="3.jpg" alt="Top">
+                <img class="mySlides" src="5.jpg" alt="Bottom">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <section class="fashion-icons">
+            <h2 style="color: #3498db;">Discover Your Style</h2>
+            <div class="fashion-icon">
+                <i class="fas fa-heart"></i>
+                <p>Classic</p>
+            </div>
+            <div class="fashion-icon">
+                <i class="fas fa-gem"></i>
+                <p>Elegant</p>
+            </div>
+            <div class="fashion-icon">
+                <i class="fas fa-star"></i>
+                <p>Trendy</p>
+            </div>
+            <div class="fashion-icon">
+                <i class="fas fa-fire"></i>
+                <p>Hot</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="color: #3498db;">Featured Products</h2>
+            <div class="product">
+                <img src="3.jpg" alt="Elegant Dress">
+                <div class="product-description">
+                    <p><strong>Elegant Dress</strong></p>
+                    <p>An exquisite dress for special occasions. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="download-btn" onclick="downloadFile('dress_manual.pdf')">Download Manual</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="5.jpg" alt="Stylish Top">
+                <div class="product-description">
+                    <p><strong>Stylish Top</strong></p>
+                    <p>A trendy top to elevate your everyday look. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="download-btn" onclick="downloadFile('top_manual.pdf')">Download Manual</button>
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a><br>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+            <div class="secondsection">
+                <div class="secDiv">
+                    <div class="secondsection">
+                        <div class="secDiv">
+                          <h3>OUR RECENT TWEETS</h3>
+                          <hr>
+                          <div class="innertwt">
+                            <h3>Tweets from <br> @joviafashionz</h3>
+                            
+                              <button>View on Twitter</button>
+                            </div>
+                          </div>
+                        </div>
+                
+                            
+                          </div>
+                        </div>
+                
+                        <button class="belowbtn">Follow@joviafashionz</button>
+                
+                        <div class="secDiv">
+                          <h3 style="margin: 10px 0px;">CONNECT WITH US ON <BR> FACEBOOK</BR></h3>
+                          <div class="fast-facts-container">
+
+                          </div>
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Clothing</a>
+            <a href="#">Trends</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: jovia@fashionz.com</p>
+            <p>Phone: (+256) 708-553-435</p>
+        </div>
+        <div class="copyright">
+            &copy; 2023 JOVIAFASHIONZ. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // ... (Your existing script) ...
+        // Updated downloadFile function
+        function downloadFile(filePath) {
+            // You can implement file download logic here
+            window.location.href = filePath;
+        }
+    </script>
+
+    <script>
+        // Image slideshow functionality
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+
+        // Start the slideshow when the page loads
+        window.onload = function () {
+            showSlides();
+        };
+    </script>
+
+</body>
+
+</html>
